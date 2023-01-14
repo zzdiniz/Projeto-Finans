@@ -1,0 +1,111 @@
+@media (max-width:1200px){
+    #box1{
+        height: 405px;
+    }
+    #box1 > .image > img{
+        width: 450px;
+        height: 282px;
+    }
+    .item{
+        width: 320px;
+    }
+}
+
+@media (max-width:990px){
+    #box1{
+        height: 356px;
+    }
+    #box1 > .image > img{
+        width: 330px;
+        height: 209px;
+    }
+    .item{
+        width: 240px;
+    }
+}
+@media (max-width:770px){
+    #box1{
+        width: 100%;
+        height: 616px;
+    }
+    #box1{
+        margin: auto;
+        width: 95vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 322px;
+        grid-template-areas: "content"
+                             "image";
+    }
+    #box1 > .image > img{
+        width: 100%;
+        height: 100%;
+    }
+    #box1 > .image{
+        width: 100%;
+        height: 100%;
+    }
+    .item{
+        margin-top: 1.5rem;
+        width: 450px;
+    }
+    .item > img{
+        height: 265px;
+    }
+    #box3{
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "easy"
+                             "time"
+                             "friend";
+    }
+}
+@media(max-width:590px){
+    #btn-mobile{
+        display: block;
+
+    }
+    ul#menu{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        top: inherit;
+        margin-top: 10px;
+        background-color: #ffc107;
+        padding-left: 5px;
+        height:0;
+        visibility: hidden;
+        transition: .6s;
+        overflow-y: hidden;
+    }
+    ul#menu li{
+        visibility: hidden;
+    }
+    #nav.active #menu{
+        visibility: visible;
+        height: 100vh;
+        z-index: 1;
+    }
+    #nav.active #menu li{
+        visibility: visible;
+        border-bottom: 1px dotted #343a40;
+    }
+    #nav.active #menu li#enter{
+        width: 100%;
+        margin-top: 5px;
+        border: 1px solid #f8f9fa;
+    }
+}
+@media  (max-width:902px){
+    section#home #img{
+        display: none;
+    }
+    section#home{
+        grid-template-areas: "content content";
+    }
+    #content form{
+        margin: 10px auto;
+    }
+}
